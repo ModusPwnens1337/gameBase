@@ -4,6 +4,8 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { LoginPage } from '../pages/login/login';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { UberLoginPage } from '../pages/uber-login/uber-login';
+import { GoogleMapsPage } from '../pages/google-maps/google-maps';
 import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -28,10 +30,12 @@ export class MyApp {
   ) {
     this.initializeApp();
 
-    // set our app's pages
+    // set our app's pages (menu??)
     this.pages = [
+      { title: 'Home', component: HelloIonicPage },
       { title: 'Login', component: LoginPage },
-      { title: 'Hello Ionic', component: HelloIonicPage },
+      { title: 'Uber', component: UberLoginPage },
+      { title: 'Google Maps', component: GoogleMapsPage },
       { title: 'My First List', component: ListPage }
     ];
   }

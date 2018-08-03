@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1057220692182",
+    "firebase_url": "https://gamebase-a1138.firebaseio.com",
+    "project_id": "gamebase-a1138",
+    "storage_bucket": "gamebase-a1138.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057220692182:android:f2bedae3ad6270f2",
+        "android_client_info": {
+          "package_name": "com.mohawkmobile.gamebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057220692182-417u68702g8i7dd4b7uveiji0jn6co02.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxHYb8EPPTeLjyYWkla1B_RuWTWf6z1WQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
