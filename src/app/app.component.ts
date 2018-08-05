@@ -13,46 +13,46 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 @Component({
-  templateUrl: 'app.html'
+templateUrl: 'app.html'
 })
 export class MyApp {
-  @ViewChild(Nav) nav: Nav;
+    @ViewChild(Nav) nav: Nav;
 
-  // make LoginPage the root (or first) page
-  rootPage = LoginPage;
-  pages: Array<{title: string, component: any}>;
+    // make LoginPage the root (or first) page
+    rootPage = GoogleMapsPage;
+    pages: Array<{title: string, component: any}>;
 
-  constructor(
-    public platform: Platform,
-    public menu: MenuController,
-    public statusBar: StatusBar,
-    public splashScreen: SplashScreen
-  ) {
-    this.initializeApp();
+    constructor(
+        public platform: Platform,
+        public menu: MenuController,
+        public statusBar: StatusBar,
+        public splashScreen: SplashScreen
+    ) {
+        this.initializeApp();
 
-    // set our app's pages (menu??)
-    this.pages = [
-      { title: 'Home', component: HelloIonicPage },
-      { title: 'Login', component: LoginPage },
-      { title: 'Uber', component: UberLoginPage },
-      { title: 'Google Maps', component: GoogleMapsPage },
-      { title: 'My First List', component: ListPage }
-    ];
-  }
+        // set our app's pages (menu??)
+        this.pages = [
+        { title: 'Home', component: HelloIonicPage },
+        { title: 'Login', component: LoginPage },
+        { title: 'Uber', component: UberLoginPage },
+        { title: 'Google Maps', component: GoogleMapsPage },
+        { title: 'My First List', component: ListPage }
+        ];
+    }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }
+    initializeApp() {
+        this.platform.ready().then(() => {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            this.statusBar.styleDefault();
+            this.splashScreen.hide();
+        });
+    }
 
-  openPage(page) {
-    // close the menu when clicking a link from the menu
-    this.menu.close();
-    // navigate to the new page if it is not the current page
-    this.nav.setRoot(page.component);
-  }
+    openPage(page) {
+        // close the menu when clicking a link from the menu
+        this.menu.close();
+        // navigate to the new page if it is not the current page
+        this.nav.setRoot(page.component);
+    }
 }
