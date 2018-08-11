@@ -19,9 +19,7 @@ export class LoginPage {
 
         this.platform.ready().then(() => {
             console.log("Game Base Login!");
-            this.navCtrl.push(HelloIonicPage//, {item: item}
-                              
-            );
+            this.navCtrl.push(HelloIonicPage);
         });
 
     } 

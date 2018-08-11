@@ -6,20 +6,19 @@ import { LoginPage } from '../pages/login/login';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { UberLoginPage } from '../pages/uber-login/uber-login';
 import { GoogleMapsPage } from '../pages/google-maps/google-maps';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 @Component({
-templateUrl: 'app.html'
+    templateUrl: 'app.html'
 })
 export class MyApp {
     @ViewChild(Nav) nav: Nav;
 
     // make LoginPage the root (or first) page
-    rootPage = GoogleMapsPage;
+    rootPage = LoginPage;
     pages: Array<{title: string, component: any}>;
 
     constructor(
@@ -32,11 +31,10 @@ export class MyApp {
 
         // set our app's pages (menu??)
         this.pages = [
-        { title: 'Home', component: HelloIonicPage },
-        { title: 'Login', component: LoginPage },
-        { title: 'Uber', component: UberLoginPage },
-        { title: 'Google Maps', component: GoogleMapsPage },
-        { title: 'My First List', component: ListPage }
+            { title: 'Home', component: HelloIonicPage },
+            { title: 'Login', component: LoginPage },
+            { title: 'Uber', component: UberLoginPage },
+            { title: 'Google Maps', component: GoogleMapsPage }
         ];
     }
 
